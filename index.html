@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Calculator</title>
+
+    <script src="bootstrap/js/jquery-3.1.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <form>
+        <div class="form-group">
+
+            <h2>Currency Converter</h2>
+            <label class="control-label col-sm-2" for="GBR">GBR</label>
+            <div class="col-sm-10">
+                <input type="text" id="GBR" class="form-control" onchange="poundConverter()"><br>
+            </div>
+            <label class="control-label col-sm-2" for="EU">EU</label>
+            <div class="col-sm-10">
+                <input type="text" id="EU" class="form-control" onchange="euroConverter()"><br>
+            </div>
+
+            <label class="control-label col-sm-2" for="BG">BG</label>
+            <div class="col-sm-10">
+                <input type="text" id="BG" class="form-control" onchange="bgConverter()"><br>
+            </div>
+
+            <label class="control-label col-sm-2" for="USD">USD</label>
+            <div class="col-sm-10">
+                <input type="text" id="USD" class="form-control" onchange="dollarConverter()">
+            </div>
+        </div>
+    </form>
+</div>
+<script src="js/currencyCalculator.js"></script>
+</body>
+</html>
